@@ -1,19 +1,22 @@
+<html>
 <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'th'; // For example, enter 'en' or 'en-US'
+function initEmbeddedMessaging() {
+	try {
+		embeddedservice_bootstrap.settings.language = 'th'; // For example, enter 'en' or 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00D2w00000Qtd9l',
-				'Web_Chat',
-				'https://destined9-dev-ed.develop.my.site.com/ESWWebChat1697008868887',
-				{
-					scrt2URL: 'https://destined9-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
+		embeddedservice_bootstrap.init(
+			'00D2w00000Qtd9l',
+			'Web_Chat',
+			'https://destined9-dev-ed.develop.my.site.com/ESWWebChat1697008868887',
+			{
+				scrt2URL: 'https://destined9-dev-ed.develop.my.salesforce-scrt.com'
+			}
+		);
+	} catch (err) {
+		console.error('Error loading Embedded Messaging: ', err);
+	}
+};
 </script>
 <script type='text/javascript' src='https://destined9-dev-ed.develop.my.site.com/ESWWebChat1697008868887/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</html>
+
