@@ -32,6 +32,11 @@
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		embedded_svc.settings.prepopulatedPrechatFields = {
+			FirstName: “John”,
+			LastName: “Doe”,
+			Email: “john.doe@salesforce.com”
+		};
 
 		embedded_svc.init(
 			'https://destined9-dev-ed.develop.my.salesforce.com',
